@@ -1,0 +1,30 @@
+
+
+<html>
+<head>
+<script type="text/javascript">
+  window.onload = function () {
+            alert('onload');
+
+        };
+document.ready(function () {
+            alert('ready');
+
+        });
+function prepHref(linkElement) {
+    var myDiv = document.getElementById('Div_contain_image');
+    var myImage = myDiv.children[0];
+    linkElement.href = myImage.src;
+}
+</script>
+</head>
+<body>
+<div id="Div_contain_image"><img src="2232.jpg" alt='MyImage'></div>
+<a href="#" onclick="prepHref(this)" download>Click here to download image</a>
+<a href="">thisss</a>
+</body>
+</html>
+
+
+
+
